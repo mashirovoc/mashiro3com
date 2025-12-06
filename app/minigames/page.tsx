@@ -7,7 +7,7 @@ const minigames: ProjectData[] = [
     title: "League Sliding Puzzle",
     description:
       "League of Legendsのスキン画像を使用したスライディングパズルゲームです。",
-    url: "https:/leagueslidingpuzzle.mashiro3.com",
+    url: "https:///leaguepuzzle.mashiro3.com",
     status: "active",
     techIcon: <IoExtensionPuzzleOutline className="h-5 w-5" />,
 
