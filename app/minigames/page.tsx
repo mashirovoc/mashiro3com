@@ -7,7 +7,7 @@ const minigames: ProjectData[] = [
     title: "League Sliding Puzzle",
     description:
       "League of Legendsのスキン画像を使用したスライディングパズルゲームです。",
-    url: "https://league-sliding-puzzle.vercel.app",
+    url: "https:/leagueslidingpuzzle.mashiro3.com",
     status: "active",
     techIcon: <IoExtensionPuzzleOutline className="h-5 w-5" />,
 
@@ -29,7 +29,7 @@ const MiniGamesPage = () => {
           <h1 className="text-3xl font-bold tracking-tight text-primary">
             Mini Games
           </h1>
-          <p className="text-muted-foreground">おもちゃ箱です </p>
+          <p className="text-muted-foreground">おもちゃ箱です。</p>
         </div>
 
         <ProjectGrid projects={minigames} />
