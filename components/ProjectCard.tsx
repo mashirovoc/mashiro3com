@@ -14,12 +14,12 @@ import {
   IoArchiveOutline,
   IoBanOutline,
   IoCodeSlashOutline,
-  IoOpenOutline, // ゲームプレイ用のアイコンを追加
+  IoOpenOutline,
   IoWarningOutline,
 } from "react-icons/io5";
 import { ProjectData } from "./ProjectGrid";
 
-export function ProjectCard({
+const ProjectCard = ({
   title,
   description,
   url,
@@ -27,7 +27,7 @@ export function ProjectCard({
   techIcon,
   hideStatus = false,
   customButtonText,
-}: ProjectData) {
+}: ProjectData) => {
   const isDeprecated = status === "deprecated";
 
   const getButtonContent = () => {
@@ -68,7 +68,7 @@ export function ProjectCard({
               {techIcon ? techIcon : <IoCodeSlashOutline className="h-5 w-5" />}
             </div>
             <CardTitle
-              className={`text-lg leading-tight ${
+              className={`break-all text-lg leading-tight ${
                 isDeprecated ? "text-muted-foreground" : "text-card-foreground"
               }`}
             >
@@ -76,7 +76,6 @@ export function ProjectCard({
             </CardTitle>
           </div>
 
-          {/* hideStatusがfalseの場合のみバッジを表示 */}
           {!hideStatus &&
             (isDeprecated ? (
               <div title="Deprecated / Archived">
@@ -132,4 +131,6 @@ export function ProjectCard({
       </CardFooter>
     </Card>
   );
-}
+};
+
+export default ProjectCard;

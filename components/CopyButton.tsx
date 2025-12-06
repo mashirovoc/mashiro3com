@@ -7,10 +7,9 @@ import { toast } from "sonner";
 interface CopyButtonProps {
   text: string;
   label: string;
-  icon: React.ReactNode; // IconType から ReactNode に変更
+  icon: React.ReactNode;
 }
-
-export function CopyButton({ text, label, icon }: CopyButtonProps) {
+const CopyButton = ({ text, label, icon }: CopyButtonProps) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(text);
     toast.success(`${label} をコピーしました！`, {
@@ -25,7 +24,6 @@ export function CopyButton({ text, label, icon }: CopyButtonProps) {
       onClick={handleCopy}
     >
       <div className="flex items-center">
-        {/* アイコンは親側でクラスを指定して渡すため、ここでは単に表示するだけ */}
         <span className="mr-3 flex items-center justify-center text-foreground">
           {icon}
         </span>
@@ -39,4 +37,5 @@ export function CopyButton({ text, label, icon }: CopyButtonProps) {
       <IoCopyOutline className="h-4 w-4 text-muted-foreground opacity-50" />
     </Button>
   );
-}
+};
+export default CopyButton;

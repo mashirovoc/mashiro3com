@@ -1,4 +1,4 @@
-import { ProjectData, ProjectGrid } from "@/components/ProjectGrid";
+import ProjectGrid, { ProjectData } from "@/components/ProjectGrid";
 import { Metadata } from "next";
 import {
   IoLogoAndroid,
@@ -14,11 +14,10 @@ const projects: ProjectData[] = [
       "名刺をオンライン化するサービスです。Androidで動作します。（iPhoneも実装予定）",
     url: "https://meishionline.mashiro3.com",
     status: "active",
-    // ここで JSX (<Icon />) を渡す
     techIcon: <IoLogoAndroid className="h-5 w-5" />,
   },
   {
-    title: "LoL Skins Viewer",
+    title: "League  Skins Viewer",
     description:
       "League of Legendsで使用できるスキンを閲覧することができます。",
     url: "https://leagueskins.vercel.app",
@@ -59,10 +58,10 @@ const projects: ProjectData[] = [
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Apps, Scripts, and Libraries.",
+  description: "作成したコードまとめです。",
 };
 
-export default function ProjectPage() {
+const ProjectPage = () => {
   return (
     <main className="min-h-screen bg-background p-6">
       <div className="max-w-5xl mx-auto">
@@ -70,11 +69,15 @@ export default function ProjectPage() {
           <h1 className="text-3xl font-bold tracking-tight text-primary">
             Projects
           </h1>
-          <p className="text-muted-foreground">Apps, Scripts, and Libraries.</p>
+          <p className="text-muted-foreground">
+            作成したコードまとめです。テストコードを含みます。
+          </p>
         </div>
 
         <ProjectGrid projects={projects} />
       </div>
     </main>
   );
-}
+};
+
+export default ProjectPage;

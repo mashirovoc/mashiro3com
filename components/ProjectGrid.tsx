@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ProjectCard } from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export type ProjectData = {
   title: string;
@@ -26,7 +26,7 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
-export function ProjectGrid({ projects }: { projects: ProjectData[] }) {
+const ProjectGrid = ({ projects }: { projects: ProjectData[] }) => {
   return (
     <motion.div
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -41,4 +41,5 @@ export function ProjectGrid({ projects }: { projects: ProjectData[] }) {
       ))}
     </motion.div>
   );
-}
+};
+export default ProjectGrid;

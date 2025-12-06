@@ -1,5 +1,5 @@
-import { CopyButton } from "@/components/CopyButton";
-import { MotionWrapper } from "@/components/MotionWrapper";
+import CopyButton from "@/components/CopyButton";
+import MotionWrapper from "@/components/MotionWrapper";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,6 +24,7 @@ import {
   IoDocumentOutline,
   IoGameControllerOutline,
   IoGridOutline,
+  IoMailOutline,
 } from "react-icons/io5";
 import { SiRiotgames } from "react-icons/si";
 
@@ -74,9 +75,14 @@ const profileData = {
       icon: <SiRiotgames className="h-5 w-5" />,
       label: "Riot ID",
     },
+    mail: {
+      id: "contact@mashiro3.com",
+      icon: <IoMailOutline className="h-5 w-5" />,
+      label: "Email",
+    },
   },
 };
-export default function ProfilePage() {
+const ProfilePage = () => {
   return (
     <main className="min-h-screen flex items-center justify-center bg-muted/40 p-4">
       <MotionWrapper className="w-full max-w-md">
@@ -112,7 +118,7 @@ export default function ProfilePage() {
                   rel="noopener noreferrer"
                 >
                   <FaDiscord className="mr-2 h-5 w-5" />
-                  ましろ㌠Discordサーバーで遊ぼう
+                  Join ましろ㌠ Discord Server!
                 </Link>
               </Button>
               <Button
@@ -122,7 +128,7 @@ export default function ProfilePage() {
               >
                 <Link href="/project">
                   <IoGridOutline className="mr-2 h-5 w-5" />
-                  プロジェクト閲覧
+                  Projects
                 </Link>
               </Button>
               <Button
@@ -132,7 +138,7 @@ export default function ProfilePage() {
               >
                 <Link href="/minigames">
                   <IoGameControllerOutline className="mr-2 h-5 w-5" />
-                  ミニゲーム
+                  Mini Games
                 </Link>
               </Button>
               <Button
@@ -142,7 +148,7 @@ export default function ProfilePage() {
               >
                 <Link href="https://blog.mashiro3.com" target="_blank">
                   <IoDocumentOutline className="mr-2 h-5 w-5" />
-                  ブログ
+                  Blog
                 </Link>
               </Button>
             </div>
@@ -194,4 +200,6 @@ export default function ProfilePage() {
       </MotionWrapper>
     </main>
   );
-}
+};
+
+export default ProfilePage;

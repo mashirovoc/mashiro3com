@@ -118,7 +118,6 @@
   }
 
   html {
-    /* スクロールバーの有無に関わらず、常にスクロールバー分の幅を確保する */
     scrollbar-gutter: stable;
   }
   body {

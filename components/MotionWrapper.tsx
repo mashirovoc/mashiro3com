@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-export function MotionWrapper({
+const MotionWrapper = ({
   children,
   className,
 }: {
   children: ReactNode;
   className?: string;
-}) {
+}) => {
   return (
     <motion.div
       initial={{ scale: 0.95, opacity: 0 }}
@@ -20,4 +20,5 @@ export function MotionWrapper({
       {children}
     </motion.div>
   );
-}
+};
+export default MotionWrapper;

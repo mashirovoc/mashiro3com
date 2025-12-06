@@ -1,4 +1,4 @@
-import { ProjectData, ProjectGrid } from "@/components/ProjectGrid";
+import ProjectGrid, { ProjectData } from "@/components/ProjectGrid";
 import { Metadata } from "next";
 import { IoExtensionPuzzleOutline } from "react-icons/io5";
 
@@ -17,25 +17,25 @@ const minigames: ProjectData[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "MiniGames",
-  description: "ましろ㌠ MiniGames - Browser Games.",
+  title: "Mini Games",
+  description: "おもちゃ箱です。",
 };
 
-export default function MiniGamesPage() {
+const MiniGamesPage = () => {
   return (
     <main className="min-h-screen bg-background p-6">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8 space-y-2">
           <h1 className="text-3xl font-bold tracking-tight text-primary">
-            MiniGames
+            Mini Games
           </h1>
-          <p className="text-muted-foreground">
-            Browser games created for fun.
-          </p>
+          <p className="text-muted-foreground">おもちゃ箱です </p>
         </div>
 
         <ProjectGrid projects={minigames} />
       </div>
     </main>
   );
-}
+};
+
+export default MiniGamesPage;
