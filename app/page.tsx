@@ -25,7 +25,6 @@ import {
   IoDocumentOutline,
   IoGameControllerOutline,
   IoGridOutline,
-  IoMailOutline,
 } from "react-icons/io5";
 import { SiRiotgames } from "react-icons/si";
 
@@ -81,11 +80,6 @@ const profileData = {
       id: "mashiro3#0000",
       icon: <SiRiotgames className="h-5 w-5" />,
       label: "Riot ID",
-    },
-    mail: {
-      id: "contact@mashiro3.com",
-      icon: <IoMailOutline className="h-5 w-5" />,
-      label: "Email",
     },
   },
 };
