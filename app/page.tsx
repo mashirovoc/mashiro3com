@@ -47,7 +47,7 @@ const profileData = {
       label: "YouTube",
     },
     FaSoundcloud: {
-      id: "@mashirovoc",
+      id: "mashirovoc",
       url: "https://soundcloud.com/mashirovoc",
       icon: FaSoundcloud,
       label: "SoundCloud",
