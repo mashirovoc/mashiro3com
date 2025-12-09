@@ -15,6 +15,7 @@ import Link from "next/link";
 import {
   FaDiscord,
   FaGithub,
+  FaSoundcloud,
   FaSteam,
   FaTwitch,
   FaXTwitter,
@@ -48,8 +49,8 @@ const profileData = {
     FaSoundcloud: {
       id: "@mashirovoc",
       url: "https://soundcloud.com/mashirovoc",
-      icon: FaYoutube,
-      label: "YouTube",
+      icon: FaSoundcloud,
+      label: "SoundCloud",
     },
     steam: {
       id: "mashiro3LoL",
