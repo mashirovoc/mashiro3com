@@ -15,10 +15,10 @@ import Link from "next/link";
 import {
   FaDiscord,
   FaGithub,
-  FaInstagram,
   FaSteam,
   FaTwitch,
   FaXTwitter,
+  FaYoutube,
 } from "react-icons/fa6";
 import {
   IoDocumentOutline,
@@ -34,16 +34,22 @@ const profileData = {
   serverUrl: "https://discord.gg/e36y4zTbPm",
   links: {
     x: {
-      id: "@mashiro3LoL",
-      url: "https://twitter.com/mashiro3LoL",
+      id: "@mashirovoc",
+      url: "https://x.com/mashirovoc",
       icon: FaXTwitter,
       label: "X (Twitter)",
     },
-    instagram: {
-      id: "@mashiro3lol",
-      url: "https://instagram.com/mashiro3lol",
-      icon: FaInstagram,
-      label: "Instagram",
+    youtube: {
+      id: "@mashirovoc",
+      url: "https://youtube.com/@mashirovoc",
+      icon: FaYoutube,
+      label: "YouTube",
+    },
+    FaSoundcloud: {
+      id: "@mashirovoc",
+      url: "https://soundcloud.com/mashirovoc",
+      icon: FaYoutube,
+      label: "YouTube",
     },
     steam: {
       id: "mashiro3LoL",
