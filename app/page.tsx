@@ -15,6 +15,7 @@ import Link from "next/link";
 import {
   FaDiscord,
   FaGithub,
+  FaInstagram,
   FaSteam,
   FaTwitch,
   FaXTwitter,
@@ -40,7 +41,7 @@ const profileData = {
     instagram: {
       id: "@mashirovoc",
       url: "https://instagramcom/mashirovoc",
-      icon: FaXTwitter,
+      icon: FaInstagram,
       label: "Instagram",
     },
     steam: {
