@@ -45,14 +45,14 @@ const profileData = {
       label: "Instagram",
     },
     steam: {
-      id: "mashiro3LoL",
-      url: "https://steamcommunity.com/id/mashiro3LoL/",
+      id: "mashirovoc",
+      url: "https://steamcommunity.com/id/mashirovoc/",
       icon: FaSteam,
       label: "Steam",
     },
     twitch: {
-      id: "mashiro3lol",
-      url: "https://www.twitch.tv/mashiro3lol",
+      id: "mashirovoc",
+      url: "https://www.twitch.tv/mashirovoc",
       icon: FaTwitch,
       label: "Twitch",
     },
