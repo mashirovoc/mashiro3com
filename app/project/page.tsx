@@ -11,9 +11,9 @@ const projects: ProjectData[] = [
   {
     title: "名刺Online",
     description:
-      "名刺をオンライン化するサービスです。Androidで動作します。（iPhoneも実装予定）",
-    url: "https://meishionline.mashiro3.com",
-    status: "active",
+      "名刺をオンライン化するサービスでした。あまりにもニッチ過ぎて最低限のテスターが集まりませんでした。",
+    url: "https://github.com/mashirovoc/meishionline",
+    status: "deprecated",
     techIcon: <IoLogoAndroid className="h-5 w-5" />,
   },
   {

@@ -37,6 +37,12 @@ const profileData = {
       icon: FaXTwitter,
       label: "X (Twitter)",
     },
+    instagram: {
+      id: "@mashirovoc",
+      url: "https://instagramcom/mashirovoc",
+      icon: FaXTwitter,
+      label: "Instagram",
+    },
     steam: {
       id: "mashiro3LoL",
       url: "https://steamcommunity.com/id/mashiro3LoL/",
@@ -58,7 +64,7 @@ const profileData = {
   },
   ids: {
     discord: {
-      id: "mashiro3lol",
+      id: "mashirovoc",
       icon: <FaDiscord className="h-5 w-5" />,
       label: "Discord User",
     },
