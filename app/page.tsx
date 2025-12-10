@@ -40,7 +40,7 @@ const profileData = {
     },
     instagram: {
       id: "@mashirovoc",
-      url: "https://instagramcom/mashirovoc",
+      url: "https://instagram.com/mashirovoc",
       icon: FaInstagram,
       label: "Instagram",
     },
