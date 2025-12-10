@@ -15,11 +15,9 @@ import Link from "next/link";
 import {
   FaDiscord,
   FaGithub,
-  FaSoundcloud,
   FaSteam,
   FaTwitch,
   FaXTwitter,
-  FaYoutube,
 } from "react-icons/fa6";
 import {
   IoDocumentOutline,
@@ -38,18 +36,6 @@ const profileData = {
       url: "https://x.com/mashirovoc",
       icon: FaXTwitter,
       label: "X (Twitter)",
-    },
-    youtube: {
-      id: "@mashirovoc",
-      url: "https://youtube.com/@mashirovoc",
-      icon: FaYoutube,
-      label: "YouTube",
-    },
-    FaSoundcloud: {
-      id: "mashirovoc",
-      url: "https://soundcloud.com/mashirovoc",
-      icon: FaSoundcloud,
-      label: "SoundCloud",
     },
     steam: {
       id: "mashiro3LoL",
