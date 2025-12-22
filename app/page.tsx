@@ -13,6 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
 import {
+  FaCube,
   FaDiscord,
   FaGithub,
   FaInstagram,
@@ -76,6 +77,7 @@ const profileData = {
     },
   },
 };
+
 const ProfilePage = () => {
   return (
     <main className="min-h-screen flex items-center justify-center bg-muted/40 p-4">
@@ -116,6 +118,15 @@ const ProfilePage = () => {
                 </Link>
               </Button>
               <Button
+                className="w-full h-12 text-base font-bold bg-green-600 hover:bg-green-700 text-white transition-all hover:scale-[1.02]"
+                asChild
+              >
+                <Link href="https://minecraft.mashiro3.com" target="_blank">
+                  <FaCube className="mr-2 h-5 w-5" />
+                  Join Minecraft ましろ鯖
+                </Link>
+              </Button>
+              <Button
                 variant="outline"
                 className="w-full h-12 text-base font-medium hover:bg-accent hover:text-accent-foreground transition-all"
                 asChild
@@ -130,9 +141,9 @@ const ProfilePage = () => {
                 className="w-full h-12 text-base font-medium hover:bg-accent hover:text-accent-foreground transition-all"
                 asChild
               >
-                <Link href="/minigames">
+                <Link href="/game">
                   <IoGameControllerOutline className="mr-2 h-5 w-5" />
-                  Mini Games
+                  Games
                 </Link>
               </Button>
               <Button
